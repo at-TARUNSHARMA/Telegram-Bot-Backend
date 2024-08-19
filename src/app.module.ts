@@ -9,7 +9,6 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { config } from 'dotenv';
 import { AdminService } from './admin/admin.service';
 import { TelegramBotService } from './telegram-bot';
-import { AdminModule } from './admin/admin.module';
 config();
 @Module({
   imports: [AdminModule, UserModule,DatabaseModule,MongooseModule.forRootAsync({
